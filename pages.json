@@ -1,0 +1,156 @@
+{
+	
+		"pages": [
+			{
+				"path": "pages/home/home",
+				"style": {
+					"navigationBarTitleText": ""
+				}
+			},
+			{
+				"path": "pages/mev/mev",
+				"style": {
+					"navigationBarTitleText": ""
+				}
+			},
+			{
+				"path": "pages/Exchange/Exchange",
+				"style": {
+					"navigationBarTitleText": ""
+				}
+			},
+			{
+				"path": "pages/pledge/pledge",
+				"style": {
+					"navigationBarTitleText": ""
+				}
+			},
+			{
+				"path": "pages/my/my",
+				"style": {
+					"navigationBarTitleText": ""
+				}
+			},
+			{
+				"path": "pages/webView/webView",
+				"style": {
+					"navigationBarTitleText": ""
+				}
+			},
+			{
+				"path": "pages/my/recharge/recharge",
+				"style": {
+					"navigationBarTitleText": ""
+				}
+			},
+			{
+				"path": "pages/my/withdrawal/withdrawal",
+				"style": {
+					"navigationBarTitleText": ""
+				}
+			},
+			{
+				"path": "pages/my/invited/invited",
+				"style": {
+					"navigationBarTitleText": ""
+				}
+			},
+			{
+				"path": "pages/my/recommendedNumber/recommendedNumber",
+				"style": {
+					"navigationBarTitleText": ""
+				}
+			},
+			{
+				"path": "pages/my/recommendationRevenue/recommendationRevenue",
+				"style": {
+					"navigationBarTitleText": ""
+				}
+			},
+			{
+				"path" : "pages/mev/incomeMev/incomeMev",
+				"style" : 
+				{
+					"navigationBarTitleText" : ""
+				}
+			},
+			{
+				"path" : "pages/mev/incomeMevDetail/incomeMevDetail",
+				"style" : 
+				{
+					"navigationBarTitleText" : ""
+				}
+			},
+			{
+				"path" : "pages/pledge/IncomeRecord/IncomeRecord",
+				"style" : 
+				{
+					"navigationBarTitleText" : ""
+				}
+			},
+			{
+				"path" : "pages/login/login",
+				"style" : 
+				{
+					"navigationBarTitleText" : ""
+				}
+			}
+		],
+		"globalStyle": {
+			"navigationBarTextStyle": "white",
+			"navigationBarTitleText": "uni-app",
+			"navigationBarBackgroundColor": "#F8F8F8",
+			"backgroundColor": "#F8F8F8",
+			"navigationStyle": "custom",
+			"app-plus": {
+				"bounce": "none",
+				"softinputNavBar": "none"
+			}
+		},
+		"tabBar": {
+			"backgroundColor": "#070312",
+			"color": "#E6E6E6",
+			"selectedColor": "#45E5AF",
+			"borderStyle": "white",
+			"list": [
+				{
+					"iconPath": "static/image/tabs/home.png",
+					"selectedIconPath": "static/image/tabs/active_home.png",
+					"pagePath": "pages/home/home",
+					"text": "行情"
+				},
+				{
+					"iconPath": "static/image/tabs/robt.png",
+					"selectedIconPath": "static/image/tabs/active_robt.png",
+					"pagePath": "pages/mev/mev",
+					"text": "MEV"
+				},
+				{
+					"iconPath": "static/image/tabs/Exchange.png",
+					"selectedIconPath": "static/image/tabs/active_Exchange.png",
+					"pagePath": "pages/Exchange/Exchange",
+					"text": "兑换"
+				},
+				{
+					"iconPath": "static/image/tabs/pledge.png",
+					"selectedIconPath": "static/image/tabs/active_pledge.png",
+					"pagePath": "pages/pledge/pledge",
+					"text": "质押"
+				},
+				{
+					"iconPath": "static/image/tabs/my.png",
+					"selectedIconPath": "static/image/tabs/active_my.png",
+					"pagePath": "pages/my/my",
+					"text": "我的"
+				}
+			]
+		},
+	"easycom" : {
+	    "custom" : {
+	        "^u--(.*)" : "@/uni_modules/uview-plus/components/u-$1/u-$1.vue",
+	        "^up-(.*)" : "@/uni_modules/uview-plus/components/u-$1/u-$1.vue",
+	        "^u-([^-].*)" : "@/uni_modules/uview-plus/components/u-$1/u-$1.vue"
+	    }
+	},
+	"uniIdRouter": {}
+}

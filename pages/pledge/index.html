@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>对调 Div 位置</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .box {
+      width: 200px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: white;
+    }
+
+    .red {
+      background-color: red;
+      order: 1;
+    }
+
+    .blue {
+      background-color: blue;
+      order: 3;
+    }
+
+    .swap-button {
+      order: 2;
+    }
+
+    /* 选中复选框后对调顺序 */
+    #swap:checked~.red {
+      order: 3;
+    }
+
+    #swap:checked~.blue {
+      order: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <input type="checkbox" id="swap" hidden>
+    <div class="box red">红色</div>
+    <label for="swap" class="swap-button">
+      <button>对调</button>
+    </label>
+    <div class="box blue">蓝色</div>
+  </div>
+</body>
+
+</html>

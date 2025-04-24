@@ -1,0 +1,48 @@
+import { reactive } from "vue";
+import { defaultConfigType } from "./interface.uts";
+// 国际化
+import zhHans from "../language/zh-Hans.uts";
+import zhHant from "../language/zh-Hant.uts";
+import en from "../language/en.uts";
+
+
+let defaultConfig : defaultConfigType = reactive<defaultConfigType>({
+	osTheme: "light",
+	osLanguage: "zh-Hans",
+	osColor: {
+		primary: "#604CFC",
+		success: "#07C160",
+		warning: "#EDA20C",
+		danger: "#D9514C",
+		// 缺省组件人物衣服色彩
+		emptyClothes: "#07C160",
+		// 其它颜色
+		red: "#F53F3F",
+		orangered: "#F77234",
+		orange: "#FF7D00",
+		gold: "#F7BA1E",
+		yellow: "#FADC19",
+		lime: "#9FDB1D",
+		green: "#00B42A",
+		cyan: "#14C9C9",
+		blue: "#3491FA",
+		arcoblue: "#165DFF",
+		purple: "#722ED1",
+		pinkpurple: "#D91AD9",
+		magenta: "#F5319D"
+	},
+	osUcsLanguage: {
+		"zh-Hans": zhHans,
+		"zh-Hant": zhHant,
+		"en": en
+	},
+	osI18nLanguage: {
+		"zh-Hans": {},
+		"zh-Hant": {},
+		"en": {}
+	}
+});
+
+export {
+	defaultConfig
+}
