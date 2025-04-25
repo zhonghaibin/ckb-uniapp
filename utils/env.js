@@ -5,12 +5,19 @@ let token = uni.getStorageSync('token');
 
 export default { //存放变量的容器
 	// ws 地址
-	wsUrl: 'wss://localhost:8787/ws/',
+	// wsUrl: 'wss://localhost:8787/ws/',
+	//
+	// baseURL: 'http://localhost:8787/v1',
+	//
+	// // 静态
+	// staticURL: 'http://localhost:8787',
 
-	baseURL: 'http://localhost:8787/v1',
+	wsUrl: 'wss://ckb.test/ws/',
+
+	baseURL: 'http://ckb.test/v1',
 
 	// 静态
-	staticURL: 'http://localhost:8787',
+	staticURL: 'http://ckb.test/h5/',
 
 	// 网络
 	// NETWORK_URL: 'https://api.devnet.solana.com',
