@@ -14,21 +14,15 @@ onShow(async () => {
   useBaseInfoStore().getBaseInfo()
   console.log('onShow1',window.solana)
   
-  // if(window.solana.isConnected == false && window.solana.publicKey == null){
-	//   console.log('未连接 请登录')
-	//   uni.navigateTo({
-	//   	url:'/pages/login/login'
-	//   })
-  // }
+  if(window.solana.isConnected == false && window.solana.publicKey == null){
+	  console.log('未连接 请登录')
+  }
   
   
   // 切换账号逻辑
-  // if(window.solana.isConnected == false && window.solana.publicKey == null ){
-	//   console.log('未连接 请登录')
-	//   uni.navigateTo({
-	//     url: '/pages/login/login',
-	//   })
-  // }
+  if(window.solana.isConnected == false && window.solana.publicKey == null ){
+	  console.log('未连接 请登录')
+  }
   console.log(window.solana, 'window.solana');
   console.log(window.solana.isConnected, 'isConnected');
   console.log(window.solana.publicKey, 'publicKey');
@@ -48,12 +42,6 @@ onShow(async () => {
   // uni.setStorageSync('walletAddress', resp.publicKey.toString())
   // console.log('切换了地址');
   // /*  */
-  // setTimeout(() => {
-  //   /* login */
-  //   uni.navigateTo({
-  //     url: '/pages/login/login',
-  //   })
-  // }, 1000);
 
 
 })

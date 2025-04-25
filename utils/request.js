@@ -79,9 +79,6 @@ service.interceptors.response.use(
 					success: function (res) {
 						if (res.confirm) {
 							console.log('用户点击确定');
-							uni.navigateTo({
-								url:'/pages/login/login'
-							})
 						} else if (res.cancel) {
 							console.log('用户点击取消');
 							// uni.navigateTo({
@@ -90,12 +87,6 @@ service.interceptors.response.use(
 						}
 					}
 				});
-				
-				// setTimeout(() => {
-				// 	uni.navigateTo({
-				// 		url: '/pages/login/login'
-				// 	})
-				// }, 1000)
 			}
 		}
 
