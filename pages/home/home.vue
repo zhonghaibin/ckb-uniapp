@@ -66,7 +66,6 @@
 	display: flex;
 	align-items: center;
 	margin: 0 30rpx;
-	width: 690rpx;
 	height: 80rpx;
 	background: #110F20;
 	border-radius: 12rpx;

@@ -17,7 +17,7 @@ export default { //存放变量的容器
 	baseURL: 'http://ckb.test/v1',
 
 	// 静态
-	staticURL: 'http://ckb.test/h5/',
+	staticURL: 'http://ckb.test',
 
 	// 网络
 	// NETWORK_URL: 'https://api.devnet.solana.com',
