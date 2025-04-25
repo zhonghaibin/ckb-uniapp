@@ -26,6 +26,7 @@
 		// line-height: 64rpx;
 		line-height: 36rpx;
 		margin-right: 130rpx;
+    flex: 1;
 	}
 
 	.home-change {
@@ -52,7 +53,7 @@
 
 .home-banner {
 	margin: 0rpx 30rpx;
-	width: 690rpx;
+	//width: 690rpx;
 	// height: 300rpx;
 
 	image {

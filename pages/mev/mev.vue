@@ -417,7 +417,7 @@ const goincome = (e) => {
 
 	.mev-pledge-amount-search-wrap {
 
-		width: 690rpx;
+		//width: 690rpx;
 		height: 108rpx;
 		background: #110F20;
 		border-radius: 30rpx;

@@ -14,21 +14,21 @@ onShow(async () => {
   useBaseInfoStore().getBaseInfo()
   console.log('onShow1',window.solana)
   
-  if(window.solana.isConnected == false && window.solana.publicKey == null){
-	  console.log('未连接 请登录')
-	  uni.navigateTo({
-	  	url:'/pages/login/login'
-	  })
-  }
+  // if(window.solana.isConnected == false && window.solana.publicKey == null){
+	//   console.log('未连接 请登录')
+	//   uni.navigateTo({
+	//   	url:'/pages/login/login'
+	//   })
+  // }
   
   
   // 切换账号逻辑
-  if(window.solana.isConnected == false && window.solana.publicKey == null ){
-	  console.log('未连接 请登录')
-	  uni.navigateTo({
-	    url: '/pages/login/login',
-	  })
-  }
+  // if(window.solana.isConnected == false && window.solana.publicKey == null ){
+	//   console.log('未连接 请登录')
+	//   uni.navigateTo({
+	//     url: '/pages/login/login',
+	//   })
+  // }
   console.log(window.solana, 'window.solana');
   console.log(window.solana.isConnected, 'isConnected');
   console.log(window.solana.publicKey, 'publicKey');

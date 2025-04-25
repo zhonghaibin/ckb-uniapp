@@ -106,7 +106,7 @@
 	}
 
 	.recharge-list-tabs-wrap {
-		width: 690rpx;
+		//width: 690rpx;
 		height: 100rpx;
 		background: rgba(17, 15, 32, 0.5);
 
@@ -117,14 +117,14 @@
 
 
 		.recharge-list-tabs-item {
-			width: 326rpx;
+			//width: 326rpx;
 			height: 80rpx;
 			border-radius: 20rpx;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			margin: 10rpx 0rpx 10rpx 10rpx;
-
+      flex: 1;
 			font-family: Source Han Sans CN;
 			font-weight: bold;
 			font-size: 30rpx;

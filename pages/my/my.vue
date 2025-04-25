@@ -41,7 +41,7 @@
 
 
 .my-content {
-	width: 690rpx;
+	//width: 690rpx;
 	height: 180rpx;
 	margin: 0 30rpx;
 	border-radius: 30rpx;
@@ -117,7 +117,7 @@
 
 .my-entry {
 	margin: 0 30rpx;
-	width: 690rpx;
+	//width: 690rpx;
 	height: 180rpx;
 	background: #191728;
 	box-shadow: 0rpx 2rpx 0rpx 0rpx rgba(13, 8, 26, 0.35);
@@ -149,7 +149,7 @@
 
 .my-about {
 	margin: 0 30rpx;
-	width: 690rpx;
+	//width: 690rpx;
 	height: 390rpx;
 	background: #191728;
 	border-radius: 30rpx;
