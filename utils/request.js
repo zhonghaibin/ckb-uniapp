@@ -1,5 +1,6 @@
 /*  */
 import axios from "axios";
+
 import {
 	UniAdapter
 } from "uniapp-axios-adapter";
@@ -10,7 +11,6 @@ import {
 	removeToken
 } from "@/utils/auth";
 import env from '@/utils/env.js'
-
 
 
 const service = axios.create({
@@ -54,61 +54,41 @@ service.interceptors.request.use(
 		return Promise.reject(err)
 	}
 )
-/*  */
+
 service.interceptors.response.use(
-	response => {
-		// console.log('原始响应', response);
-		const data = response.data
-		// uni.hideLoading()
-		if (data.code != 200) {
-			
-			console.log(data.message, "network ");
-			// uni.showToast({
-			// 	title: data.message,
-			// 	icon: "none"
-			// })
-			/*  */
-			if (data.code == 502) { }
-			if (data.code == 403) { }
-			if (data.code == 401) {
-				// console.log('401');
-				
-				uni.showModal({
-					title: '请先登录',
-					content: '点击连接钱包登录',
-					success: function (res) {
-						if (res.confirm) {
-							console.log('用户点击确定');
-						} else if (res.cancel) {
-							console.log('用户点击取消');
-							// uni.navigateTo({
-							// 	url:'/pages/home/home'
-							// })
-						}
-					}
-				});
+		response => {
+			const data = response.data;
+
+			if (data.code !== 200) {
+				console.log(data.message, "network error");
+
+				if (data.code === 401) {
+					// Handle 401 Unauthorized
+					uni.showToast({
+						title: '登录已过期,请重新连接钱包',
+						icon: "none"
+					});
+					removeToken();
+					uni.reLaunch({
+						url: '/'
+					});
+				} else if (data.code === 403) {
+					// Handle 403 Forbidden
+				} else if (data.code === 502) {
+					// Handle 502 Bad Gateway
+				}
 			}
+
+			return data;
+		},
+		err => {
+			uni.showToast({
+				title: '网络异常',
+				icon: "none"
+			});
+			return Promise.reject(err);
 		}
-
-		// uni.showToast({
-		// 	title: data.message,
-		// 	icon: "none"
-		// })
-		/* 成功响应 */
-		// console.log(data, "success 200");
-		return data
-	},
-	err => {
-		// uni.hideLoading()
-		uni.showToast({
-			title: '网络异常',
-			icon: "none"
-		})
-		return Promise.reject(err)
-	}
-)
-
-
+	);
 
 
 

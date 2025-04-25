@@ -4,41 +4,13 @@
 let token = uni.getStorageSync('token');
 
 export default { //存放变量的容器
-	//线上
-	// baseURL: 'http://47.84.41.231:3000',
-	// baseURL: 'http://47.84.41.231:3000',
-	// baseURL: 'http://192.168.3.35:3000',
-	//本地	
-	// http://192.168.3.10:8787/v1/auth/login
-
-
 	// ws 地址
-	/* https://admin-cxc.xsztest.top/v1/user/info */
-	wsUrl: 'wss://admin-cxc.xsztest.top/ws/',
-	// wsUrl: 'wss://api.ckbio.top/ws/',
-	
-	// baseURL: 'http://192.168.3.10:8787/v1',
-	baseURL: 'https://admin-cxc.xsztest.top/v1',
-	// baseURL: 'https://api.ckbio.top/v1',
+	wsUrl: 'wss://localhost:8787/ws/',
+
+	baseURL: 'http://localhost:8787/v1',
 
 	// 静态
-	// staticURL: 'http://192.168.3.10:8787',
-	staticURL: 'https://admin-cxc.xsztest.top',
-	// staticURL: 'https://api.ckbio.top',
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	staticURL: 'http://localhost:8787',
 
 	// 网络
 	// NETWORK_URL: 'https://api.devnet.solana.com',
@@ -54,7 +26,6 @@ export default { //存放变量的容器
 
 	RECEIVE_ADDRESS: '3e71CqSwTdfXxxh5HnYjqju31a2WRQZXt68TkkUTLHpG', // 1
 	// RECEIVE_ADDRESS: 'cz5ED65zSDVNXRaD35s4FMZtc4LUX6onn5q5MDkZ8uM', // 2
-
 
 
 }

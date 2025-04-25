@@ -153,7 +153,7 @@
 					}
 
 					.home-content-left-subTitle {
-						margin-top: 20rpx;
+						//margin-top: 20rpx;
 						font-family: Source Han Sans CN;
 						font-weight: 300;
 						font-size: 20rpx;
@@ -630,7 +630,7 @@ const checkWallet = (walletName) => {
 	}
 };
 // 连接钱包
-const connectWallet = async () => {
+ const connectWallet = async () => {
 	console.log('链接钱包');
 	if (!window.solana || !checkWallet('phantom')) {
 		alert('请使用 Solana 钱包连接');

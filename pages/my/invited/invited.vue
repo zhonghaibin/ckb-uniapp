@@ -10,11 +10,10 @@
 		align-items: center;
 		justify-content: center;
 
-		.recharge-header-back-icon {
-			margin-right: 26rpx;
-
-
-
+    .recharge-header-back-icon {
+      margin-right: 26rpx;
+      display: flex;
+      justify-content: center;
 			image {
 				width: 22rpx;
 
